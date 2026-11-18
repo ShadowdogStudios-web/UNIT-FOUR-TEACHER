@@ -99,7 +99,9 @@ figure img{width:100%;display:block;border:1px solid var(--line);background:#E3E
 
 /* highlighter + notes */
 mark.hl{background:#F6DE84;color:#1E2620;padding:0 1px;cursor:pointer}
-.tools-dock{position:fixed;right:16px;bottom:16px;display:flex;flex-direction:column;align-items:flex-end;gap:8px;z-index:30}
+.tools-dock{position:fixed;right:12px;bottom:12px;display:flex;flex-direction:column;align-items:flex-end;gap:6px;z-index:30}
+.tools-dock .btn{min-height:34px;padding:0 12px;font-size:13px;line-height:1.1}
+@media (max-width:600px){.tools-dock .btn{min-height:32px;padding:0 10px;font-size:12px}}
 .tools-dock .btn{box-shadow:0 2px 10px rgba(0,0,0,.12)}
 .tools-dock .btn[aria-pressed="true"]{background:#F6DE84;border-color:#C9A72A}
 .hl-tip{background:var(--ink);color:#fff;font-size:13px;padding:6px 10px;max-width:260px;display:none}
@@ -146,7 +148,7 @@ html.hl-on .term-def{cursor:text;border-bottom-style:none}
 .ab-in{background:#fff;max-width:640px;width:100%;max-height:calc(100vh - 32px);overflow:auto;padding:22px 24px;border-top:3px solid var(--rust)}
 .ab-in h2{font:400 28px Georgia,serif;margin:4px 0 8px}.ab-in h3{font:600 16px var(--sans);margin:14px 0 4px}
 .ab-in p,.ab-in li{font:400 15px/1.55 var(--sans)}.ab-k{color:var(--muted);font-size:13px!important}
-.tools-dock .ab-btn{min-height:36px;font-size:13px}
+.tools-dock .ab-btn{min-height:30px;padding:0 10px;font-size:12px}
 body.nick .read-bar,body.theater-page .read-bar{background:#211A14;border-color:#6B5638;color:#F3E6C8}
 
 /* ---------- pop-out image viewer ---------- */
